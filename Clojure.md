@@ -1,7 +1,7 @@
 Clojure experiments
 ===================
 
-[Mejsla](http://www.mejsla.se/) and [Lars Westergren](http://twitter.com/#!/wgren) organised a very nice programming language unconference in Stockholm on November 29, 2011. One of the sessions was a hands-on Clojure lab, given by [Ville Svärd](http://twitter.com/#!/villesv). Below is a [turtle graphics](http://en.wikipedia.org/wiki/Turtle_graphics) experiment I did during that lab.
+[Mejsla](http://www.mejsla.se/) and [Lars Westergren](http://twitter.com/#!/wgren) organised a very nice programming language unconference in Stockholm on November 29, 2011. One of the sessions was a hands-on Clojure lab, given by [Ville Sv&auml;rd](http://twitter.com/#!/villesv). Below is a [turtle graphics](http://en.wikipedia.org/wiki/Turtle_graphics) experiment I did during that lab.
 
 I started by downloading [Clojure](http://clojure.org/getting_started), and I was surprised at how easy it was to get started. As an "old" Lisp programmer I felt at home! :)
 
@@ -87,9 +87,12 @@ Test snippets:
 
     (dotimes [n 10] (prn n))
 	
-    (dotimes 4 square)
-
-    (dotimes 1000
+    (dotimes 4
+      (fn []
+        (square)
+        (turn 90)))
+		
+    (dotimes 360
       (fn []
         (square)
         (turn 1)))
