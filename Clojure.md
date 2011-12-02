@@ -84,8 +84,6 @@ Here goes the code for the Turtle Graphics experiment (shameless use of globals 
            (dragon1 (* size 0.707) (- level 1)))))
     
 Test snippets:
-
-    (dotimes [n 10] (prn n))
 	
     (dotimes 4
       (fn []
